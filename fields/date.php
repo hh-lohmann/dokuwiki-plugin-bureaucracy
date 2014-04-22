@@ -29,7 +29,7 @@ class syntax_plugin_bureaucracy_field_date extends syntax_plugin_bureaucracy_fie
 
         $value = $this->getParam('value');
         if (!is_null($value) && !preg_match('/^\d{4}-\d{2}-\d{2}$/', $value)) {
-            throw new Exception(sprintf($this->getLang('e_date'),hsc($this->getParam('display'))));
+            //throw new Exception(sprintf($this->getLang('e_date'),hsc($this->getParam('display'))));
         }
     }
 }
